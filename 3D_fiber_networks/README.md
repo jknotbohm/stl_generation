@@ -16,7 +16,7 @@ See note below about need for downloading functions from the Mathworks file exch
 
 ## Section 1: Modeling fibers 
 
-This section converts each fiber in the network into a three-dimensional hollow beam of circular cross-section with all of its surfaces triangulated in Standard Tessellation Language (STL). At each node, the code adds a sphere of dimeter equal to the diameter of the fiber to remove the gap at the node. Then it creates a python script to run it on the Blender's scripting environment. In Blender, the individual fiber meshes are combined into a single object containing disconnected fiber meshes mutually overlapping near the nodes of the network. Following are the step-by-step instructions.
+This section converts each fiber in the network into a three-dimensional hollow beam of circular cross-section with all of its surfaces triangulated in Standard Tessellation Language (STL). At each node, the code adds a sphere of diameter equal to the diameter of the fiber to remove the gap at the node. Then it creates a python script to run it on the Blender's scripting environment. In Blender, the individual fiber meshes are combined into a single object containing disconnected fiber meshes mutually overlapping near the nodes of the network. Following are the step-by-step instructions.
 
 ### Step 1 (in MATLAB):
 #### Main file: 
@@ -56,11 +56,11 @@ Here the fiber meshes are geometrically connected.
 
 Autodesk's Netfabb Premium 2023 is used in this section. Following steps are required.
 
-Go to *File* > click on *Add Part* > (in dialog box showing details of errors) keep Automatic Repair unchecked as it should be and click on *Add Part* > right click on part/drawing > click on *prepare* > click on *Repair Part* > click on the tab *Run Repair Script* > choose *Extended Repair* > click on *Execute* 
+Go to *File* > click on *Add Part* (browse to the file outputted by Blender) > (in dialog box showing details of errors) keep Automatic Repair unchecked as it should be and click on *Add Part* > right click on part/drawing > click on *prepare* > click on *Repair Part* > click on the tab *Run Repair Script* > choose *Extended Repair* > click on *Execute* 
 
 Check the box of automatic update once the repair script executes successfully. You will find green ticks in the points 'mesh closed' and 'mesh oriented'.   
 
-Finally, click on *Apply Repair* (choose *Remove Old Part* when prompted) > right click on part/drawing > click on *Export Part* > click on *as STL* (make sure that the binary STL files option is chosen) > you can name the file containing final STL file of the network > click on x*OK*  
+Finally, click on *Apply Repair* (choose *Remove Old Part* when prompted) > right click on part/drawing > click on *Export Part* > click on *as STL* (make sure that the binary STL files option is chosen) > you can name the file containing final STL file of the network > click on *Ok*  
 
 Once done, close the Netfabb GUI.  
 
@@ -69,7 +69,7 @@ The STL file of the network as exported from Netfabb is ready to be imported int
 ## Examples:
 To run the scripts with the default parameters, the input MAT file for a representative random fiber network is provided under *Examples* in this repository: `3D_Network_for_STL_30x30x30_Seed_1003.mat`.
 
-The output STL file for this representative network is also provoded: `final_merged_stl_file_for_AM.stl`. This file is ready to be sliced and printed in a 3D printer.
+The output STL file for this representative network is also provided: `final_merged_stl_file_for_AM.stl`. This file is ready to be sliced and printed in a 3D printer.
 
 
 

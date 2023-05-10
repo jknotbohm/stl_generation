@@ -54,11 +54,11 @@ Here the fiber meshes are geometrically connected.
 
 Autodesk's Netfabb Premium 2023 is used in this section. Following steps are required.
 
-Go to *File* > click on *Add Part* > (in dialog box showing details of errors) keep Automatic Repair unchecked as it should be and click on *Add Part* > right click on part/drawing > click on *prepare* > click on *Repair Part* > click on the tab *Run Repair Script* > choose *Extended Repair* > click on *Execute* 
+Go to *File* > click on *Add Part* (browse to the file outputted by Blender) > (in dialog box showing details of errors) keep Automatic Repair unchecked as it should be and click on *Add Part* > right click on part/drawing > click on *prepare* > click on *Repair Part* > click on the tab *Run Repair Script* > choose *Extended Repair* > click on *Execute* 
 
 Check the box of automatic update once the repair script executes successfully. You will find green ticks in the points 'mesh closed' and 'mesh oriented'.   
 
-Finally, click on *Apply Repair* (choose *Remove Old Part* when prompted) > right click on part/drawing > click on *Export Part* > click on *as STL* (make sure that the binary STL files option is chosen) > you can name the file containing final STL file of the network > click on x*OK*  
+Finally, click on *Apply Repair* (choose *Remove Old Part* when prompted) > right click on part/drawing > click on *Export Part* > click on *as STL* (make sure that the binary STL files option is chosen) > you can name the file containing final STL file of the network > click on *Ok*  
 
 Once done, close the Netfabb GUI.  
 
@@ -67,7 +67,7 @@ The STL file of the network as exported from Netfabb is ready to be imported int
 ## Examples:
 To run the scripts with the default parameters, the input MAT file for a representative random fiber network is provided under *Examples* in this repository: `Voronoi_2DNetwork_data_NM_110x110_rho_0.036_pr_0.97.mat`.
 
-The output STL file for this representative network is also provoded: `final_stl_file_for_AM.stl`. This file is ready to be sliced and printed in a 3D printer.
+The output STL file for this representative network is also provided: `final_stl_file_for_AM.stl`. This file is ready to be sliced and printed in a 3D printer.
 
 
 
